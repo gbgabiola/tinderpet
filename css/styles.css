@@ -1,7 +1,7 @@
 /* font-family: 'Ubuntu', sans-serif;
 font-family: 'Montserrat', sans-serif; */
 
-body {
+html, body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
@@ -113,9 +113,7 @@ p { color: #8f8f8f; }
 
 
 /* Price Section */
-#price {
-  padding: 6.25rem;
-}
+#price { padding: 6.25rem; }
 
 .price-heading {
   font-size: 3rem;
@@ -124,9 +122,10 @@ p { color: #8f8f8f; }
 
 .price-column { padding: 3% 2%; }
 
+.card-heading { font-size: 1.75rem; }
+
 
 /* Footer Section */
-
 #footer a {
   color: #8f8f8f;
 }
@@ -144,14 +143,90 @@ p { color: #8f8f8f; }
 
 
 
-/* Media Queries */
-@media (max-width: 1028px) {
+
+
+/* @media (max-width: 768px) {
+  .btn-responsive {
+    padding:2px 4px;
+    font-size:80%;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .btn-responsive {
+    padding:4px 9px;
+    font-size:90%;
+    line-height: 1.2;
+  }
+} */
+
+
+@media(max-width:1023px) {
+
   #title .container-fluid {
     text-align: center;
   }
-
+  
   .title-img {
     position: static;
     transform: rotate(0);
+    width: 40%;
+  }
+
+  .container-fluid { padding: 3% 11%; }
+  
+  .big-heading { font-size: 3rem; }
+  
+  .section-heading,
+  .testimonial-heading,
+  .price-heading { font-size: 2rem; }
+
+  .navbar { padding: 0 0 2.5rem 0; }
+
+  .navbar-brand { font-size: 1.5rem; }
+
+  .nav-item { padding: 0 1.13rem; }
+
+  .nav-link { font-size: 1.2rem; }
+
+  .feature-box { padding: 3%; }
+  
+  #price { padding: 2.5rem; }
+
+  .card-heading { font-size: 1.2rem; }
+
+  /* .btn-download { margin: 2% 1.5% 2% 0; } */
+  .btn-download {
+    padding: .27rem .5rem;
+    font-size: 1rem;
   }
 }
+
+@media(max-width:767px) {
+  .big-heading { font-size:1.6rem; }
+
+  .section-heading,
+  .testimonial-heading,
+  .price-heading { font-size: 1.5rem; }
+
+  .container-fluid { padding: 3% 11%; }
+
+  .title-img { width: 30%; }
+
+  .navbar-brand { font-size: 1.2rem; }
+
+  .nav-link { font-size: 1rem; }
+
+  .feature-box { padding: 2%; }
+
+  #price { padding: 2rem; }
+
+  .card-heading { font-size: 1rem; }
+
+  .btn-download {
+    /* padding: .27rem .5rem; */
+    font-size: .5rem;
+  }
+}
+   
