@@ -77,7 +77,10 @@ p { color: #8f8f8f; }
 
 .feature-title { font-size: 1.5rem; }
 
-.feature-box { padding: 4.5%; }
+.feature-box {
+  padding: 4.5%;
+  font-size: .7rem;
+}
 
 .icon {
   margin-bottom: 1rem;
@@ -142,28 +145,8 @@ p { color: #8f8f8f; }
 }
 
 
-
-
-
-/* @media (max-width: 768px) {
-  .btn-responsive {
-    padding:2px 4px;
-    font-size:80%;
-    line-height: 1;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-  .btn-responsive {
-    padding:4px 9px;
-    font-size:90%;
-    line-height: 1.2;
-  }
-} */
-
-
+/* Media Queries */
 @media(max-width:1023px) {
-
   #title .container-fluid {
     text-align: center;
   }
@@ -171,7 +154,6 @@ p { color: #8f8f8f; }
   .title-img {
     position: static;
     transform: rotate(0);
-    width: 40%;
   }
 
   .container-fluid { padding: 3% 11%; }
@@ -196,9 +178,8 @@ p { color: #8f8f8f; }
 
   .card-heading { font-size: 1.2rem; }
 
-  /* .btn-download { margin: 2% 1.5% 2% 0; } */
   .btn-download {
-    padding: .27rem .5rem;
+    /* padding: .27rem .5rem; */
     font-size: 1rem;
   }
 }
@@ -207,12 +188,11 @@ p { color: #8f8f8f; }
   .big-heading { font-size:1.6rem; }
 
   .section-heading,
-  .testimonial-heading,
   .price-heading { font-size: 1.5rem; }
 
-  .container-fluid { padding: 3% 11%; }
+  .testimonial-heading { font-size: 1rem; }
 
-  .title-img { width: 30%; }
+  .container-fluid { padding: 3% 11%; }
 
   .navbar-brand { font-size: 1.2rem; }
 
@@ -220,13 +200,10 @@ p { color: #8f8f8f; }
 
   .feature-box { padding: 2%; }
 
+  .press-logo { width: 10%; }
+
   #price { padding: 2rem; }
 
   .card-heading { font-size: 1rem; }
-
-  .btn-download {
-    /* padding: .27rem .5rem; */
-    font-size: .5rem;
-  }
 }
    
